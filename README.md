@@ -1,0 +1,2 @@
+# mostima
+blog repo
