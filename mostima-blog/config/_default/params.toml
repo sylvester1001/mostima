@@ -6,8 +6,8 @@
 # https://blowfish.page/docs/configuration/#theme-parameters
 
 colorScheme = "blowfish"
-defaultAppearance = "light" # valid options: light or dark
-autoSwitchAppearance = false
+defaultAppearance = "dark" # valid options: light or dark
+autoSwitchAppearance = true
 
 enableSearch = true
 enableCodeCopy = true
