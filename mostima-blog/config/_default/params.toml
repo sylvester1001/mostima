@@ -21,7 +21,7 @@ disableImageOptimization = true
 # defaultFeaturedImage = "IMAGE.jpg" # used as default for featured images in all articles
 
 highlightCurrentMenuArea = false
-smartTOC = false
+smartTOC = true
 smartTOCHideUnfocusedChildren = false
 
 [header]
@@ -73,6 +73,7 @@ smartTOCHideUnfocusedChildren = false
   showAuthorsBadges = true
   showWordCount = true
   # sharingLinks = [ "linkedin", "twitter", "reddit", "pinterest", "facebook", "email", "whatsapp", "telegram"]
+  # showComments = true
 
 [list]
   showHero = false
