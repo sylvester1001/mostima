@@ -209,8 +209,8 @@ ssh root@111.222.333.444 -p 22
 2. 写入文件配置
 
    ```ini
-   :443, naive.buliang0.tk #你的域名
-   tls example@example.com #你的邮箱
+   :443, your.domain.com #你的域名
+   tls your@mail.com #你的邮箱
    route {
     forward_proxy {
       basic_auth user pass #用户名和密码
@@ -240,13 +240,15 @@ ssh root@111.222.333.444 -p 22
   ./caddy run
   ```
 
-  一般用来查看caddy运行输出信息时使用
+  我一般在不确定是否自己配置完全无误时用来查看caddy运行输出信息时使用
 
 - 后台运行
 
   ```bash
   ./caddy start
   ```
+
+  如可以确保配置文件无误时直接使用后台启动
 
   
 
