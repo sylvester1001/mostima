@@ -17,15 +17,15 @@ series_order: 2
 
 ## 搭建需求
 
+### 基本需求
+
 1. 一台境外的服务器
 
    可从[Vultr](www.vultr.com)，[DigitalOcean](www.digitalocean.com) 等云服务器商租用
 
 2. 了解基本的终端命令行知识，例如：`cd`, `ls`, `systemctl` 等
 
-   
-
-## 环境需求 & 安装方式
+### 环境需求 & 安装方式
 
 我的服务器使用Arch Linux，故我将使用Arch Linux的包管理器安装。如果你使用的是别的Linux发行版（如Debian，Ubuntu）等，请自行查看包管理器安装命令。
 
@@ -72,24 +72,25 @@ nginx version: nginx/1.22.1
 
 
 
-## 下载hnet文件 & 安装
+## 下载HNet文件 & 安装
 
 详情可参考[hideip.network](https://official.hideip.network/) 官方网站 
 
-1. 下载项目文件
+### 下载项目文件
 
-   ```bash
-   git clone -b v3 https://github.com/Hideipnetwork/hideipnetwork-web.git
-   ```
+```bash
+git clone -b v3 https://github.com/Hideipnetwork/hideipnetwork-web.git
+```
 
-2. 进入目录并安装项目
+### 安装项目
 
-   ```bash
-   # 进入目录
-   cd hideipnetwork-web
-   # 安装并初始化
-   npm install
-   ```
+```bash
+# 进入目录
+cd hideipnetwork-web
+
+# 安装并初始化
+npm install
+```
 
 
 
@@ -132,24 +133,39 @@ nginx version: nginx/1.22.1
    }
    ```
 
-   
-
-3. 加载配置并启动nginx
-
-   ```bash
-   # 加载上方填入的配置
-   sudo systemctl reload nginx
-   # 启动nginx
-   sudo systemctl start nginx
-   # 或者
-   sudo systemctl restart nginx
-   ```
 
 
 
-## 安装pm2配置后台运行
+## 启动nginx
 
-通过pm2管理hnet在后台运行
+### 加载配置
+
+首先需要将之前写入的配置文件重新加载
+
+```bash
+# 加载上方填入的配置
+sudo systemctl reload nginx
+```
+
+然后启动nginx服务
+
+```bash
+# 启动nginx
+sudo systemctl start nginx
+
+# 或者
+sudo systemctl restart nginx
+```
+
+
+
+## 安装pm2
+
+### 什么是pm2
+
+PM2是node进程管理工具，可以利用它来简化很多node应用管理的繁琐任务，如性能监控、自动重启、负载均衡等，而且使用非常简单。
+
+### 安装
 
 ```bash
 # 进入项目目录
@@ -157,11 +173,23 @@ cd /root/hideipnetwork-web
 
 #安装pm2
 npm i pm2 -g
+```
 
+安装完成后使用以下命令查看是否成功安装
+
+```bash
 #查看是否正常安装
 pm2 --version
+```
 
-#启动hnet
+
+
+## 启动HNet并后台运行
+
+通过pm2管理hnet在后台运行
+
+```bash
+#启动hnet并后台运行
 pm2 start index.mjs --name HNet
 
 # 查看是否正常启动
