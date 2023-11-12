@@ -5,8 +5,6 @@ draft: false
 description: "使用hideip network搭建在线网页代理方法."
 slug: "hideip-network"
 tags: ["proxy"]
-series: ["Blog"]
-series_order: 2
 ---
 
 ## 前言
