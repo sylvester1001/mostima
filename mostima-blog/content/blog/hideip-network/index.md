@@ -7,30 +7,54 @@ slug: "hideip-network"
 tags: ["proxy"]
 series: ["Blog"]
 series_order: 2
+
 ---
 
+## 前言
 
-## 前置需求 & 安装方式
+本文使用的在线网页代理是匿名浏览网页工具，通过浏览器网页实现访问你需要的网站，而不用单独开启VPN，适用于禁止使用VPN，或不便留下痕迹的情况。
+
+
+
+## 搭建需求
+
+1. 一台境外的服务器
+
+   可从[Vultr](www.vultr.com)，[DigitalOcean](www.digitalocean.com) 等云服务器商租用
+
+2. 了解基本的终端命令行知识，例如：`cd`, `ls`, `systemctl` 等
+
+   
+
+## 环境需求 & 安装方式
+
+我的服务器使用Arch Linux，故我将使用Arch Linux的包管理器安装。如果你使用的是别的Linux发行版（如Debian，Ubuntu）等，请自行查看包管理器安装命令。
 
 - node
 
   ```bash
-  sudo apt install nodejs
+  sudo pacman -S nodejs
   ```
 
 - npm
 
   ```bash
-  sudo apt install npm
+  sudo pacman -S npm
   ```
 
 - nginx
 
   ```bash
-  sudo apt install nginx
+  sudo pacman -S nginx
   ```
 
-安装完成后, 使用以下命令查看是否有效, 注意node版本需要v16及以上, 如果apt 安装的版本低于v16, 建议手动安装
+安装完成后, 使用以下命令查看是否有效,
+
+{{< alert }}
+
+**注意:** node版本需要v16及以上, 如果apt 安装的版本低于v16, 建议手动安装
+
+{{< /alert >}}
 
 ```bash
 # 查看安装是否有效
@@ -72,9 +96,9 @@ nginx version: nginx/1.22.1
 
 ## 配置nginx
 
-由于HNet项目规定仅允许通过https访问, 所以需将本机56559端口反代.
+由于HNet项目规定仅允许通过https访问, 且项目默认使用本机等56559端口，所以需使用nginx将本机56559端口反代.
 
-使用nginx, 让我们的域名 abc.def.xyz 可以访问到本机的 127.0.0.1:56559 端口
+使用nginx, 让你的域名 abc.def.xyz 可以访问到本机的 127.0.0.1:56559 端口
 
 1. 在目录`/etc/nginx/conf.d` 创建文件 `hnet.conf`
 
@@ -157,6 +181,6 @@ pm2 save
 pm2 startup
 ```
 
-此时应该可以通过 `https://你的域名` 来访问HNet了.
+至此应该可以通过 `https://你的域名` 来访问HNet了.
 
 
