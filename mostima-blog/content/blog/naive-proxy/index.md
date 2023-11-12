@@ -1,6 +1,6 @@
 ---
 title: "使用Digital Ocean服务器从零搭建NaïveProxy节点"
-date: 2023-11-11
+date: 2023-11-12
 draft: false
 description: "naive proxy establish."
 slug: "naive-proxy"
