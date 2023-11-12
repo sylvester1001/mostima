@@ -21,8 +21,8 @@ disableImageOptimization = true
 # defaultFeaturedImage = "IMAGE.jpg" # used as default for featured images in all articles
 
 highlightCurrentMenuArea = false
-smartTOC = true
-smartTOCHideUnfocusedChildren = true
+smartTOC = false
+smartTOCHideUnfocusedChildren = false
 
 [header]
   layout = "fixed-fill-blur" # valid options: basic, fixed, fixed-fill, fixed-fill-blur
