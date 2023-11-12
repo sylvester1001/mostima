@@ -8,8 +8,5 @@ cascade:
   invertPagination: true
 ---
 
-{{< lead >}}
-Test content
-{{< /lead >}}
 
 ---
