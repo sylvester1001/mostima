@@ -7,7 +7,6 @@ slug: "hideip-network"
 tags: ["proxy"]
 series: ["Blog"]
 series_order: 2
-
 ---
 
 ## 前言
@@ -50,7 +49,7 @@ series_order: 2
 
 安装完成后, 使用以下命令查看是否有效,
 
-{{< alert }}
+{{< alert >}}
 
 **注意:** node版本需要v16及以上, 如果apt 安装的版本低于v16, 建议手动安装
 
