@@ -1,6 +1,6 @@
 ---
-title: "Welcome to Blowfish! :tada:"
-description: "This is a demo of the Blowfish theme for Hugo."
+title: "That was less than stellar."
+description: "Purity of form, purity of function"
 ---
 
 你好，这里是Mostima.<br>
