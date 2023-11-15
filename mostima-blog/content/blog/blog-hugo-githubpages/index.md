@@ -4,7 +4,7 @@ date: "2023-11-14"
 draft: false
 description: "hugo and github pages blog"
 slug: "hugo-github-pages-blog"
-tags: ["blog", "hugo"]
+tags: ["Blog", "Hugo", "GitHub Pages", "Cusdis"]
 ---
 
 
