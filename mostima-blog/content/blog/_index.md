@@ -1,6 +1,6 @@
 ---
 title: "Blog"
-description: "Daily blogs"
+description: "Blog contents"
 
 cascade:
   showDate: true
