@@ -4,7 +4,7 @@ date: 2023-11-11
 draft: false
 description: "使用hideip network搭建在线网页代理方法."
 slug: "hideip-network"
-tags: ["proxy"]
+tags: ["Proxy", "Hideip-network"]
 ---
 
 ## 前言

@@ -4,7 +4,7 @@ date: 2023-11-12
 draft: false
 description: "naive proxy establish."
 slug: "naive-proxy"
-tags: ["proxy"]
+tags: ["NaiveProxy"]
 ---
 ## 简介
 
