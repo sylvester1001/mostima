@@ -1,5 +1,5 @@
 ---
-title: "使用Hideip-network搭建网页代理"
+title: "使用 Hideip-network 搭建网页代理"
 date: 2023-11-11
 draft: false
 description: "使用hideip network搭建在线网页代理方法."
