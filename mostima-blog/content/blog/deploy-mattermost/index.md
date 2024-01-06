@@ -1,6 +1,6 @@
 ---
 title: "基于 Docker 部署 Mattermost"
-date: 2024-01-07
+date: 2024-01-06
 draft: false
 description: "基于 Docker 部署 Mattermost."
 slug: "Mattermost"
@@ -11,7 +11,9 @@ tags: ["Mattermost", "Docker"]
 
 ## Mattermost 介绍
 
-**[Mattermost](https://mattermost.com/)**是一个灵活的开源、可自行架设的[在线聊天服务](https://zh.wikipedia.org/wiki/网络聊天)，有分享文件、搜索与集成其他服务等功能。可用于内网聊天, 自建聊天服务等. 客户端支持全平台终端, 方便且易于使用.
+[Mattermost](https://mattermost.com/) 是一个灵活的开源、可自行架设的[在线聊天服务](https://zh.wikipedia.org/wiki/网络聊天)，有分享文件、搜索与集成其他服务等功能。可用于内网聊天, 自建聊天服务等. 客户端支持全平台终端, 方便且易于使用.
+
+![1](featured.png)
 
 ## 安装 Docker 及 Docker compose
 
@@ -133,6 +135,12 @@ tags: ["Mattermost", "Docker"]
 
 3. 修改 `.env` 文件
 
+   {{< alert >}}
+
+   注意: 本文撰写时Mattermost最新的版本号为 9.3.0
+
+   {{< /alert >}}
+
    1. 如果你有域名, 可以将 `DOMAIN=mm.example.com` 中的域名修改为你的域名
 
    2. 由于默认使用的是企业版, 如果需要使用社区版请将变量 ` MATTERMOST_IMAGE` 修改为 `mattermost-team-edition` , 即
@@ -153,11 +161,7 @@ tags: ["Mattermost", "Docker"]
       MATTERMOST_IMAGE_TAG=9.3.0
       ```
 
-      {{< alert >}}
       
-      注: 本文撰写时最新的版本号为 `9.3.0`
-      
-      {{< /alert }}
 
 4. 创建所需的目录并设置其权限
 
