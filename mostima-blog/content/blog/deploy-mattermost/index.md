@@ -7,7 +7,7 @@ slug: "Mattermost"
 tags: ["Mattermost", "Docker"]
 ---
 
-本文记录如何使用 Docker 私有化部署可于生产环境中使用的Mattermost的方法.
+本文记录如何使用 Docker 私有化部署可于生产环境中使用的 Mattermost 的方法.
 
 ## Mattermost 介绍
 
@@ -127,7 +127,7 @@ tags: ["Mattermost", "Docker"]
 
 2. 创建 `.env` 文件
 
-   在 `docer` 目录下, 存在于一个默认文件, 名字为 `env.example`, 将其 copy 为我们的 `.env` 文件
+   在 `docker` 目录下, 存在于一个默认文件, 名字为 `env.example`, 将其 copy 为我们的 `.env` 文件
 
    ```bash
    cp env.example .env
@@ -182,6 +182,8 @@ tags: ["Mattermost", "Docker"]
 
 
 ### 配置反向代理
+
+由于使用 http 为明文传输，并不安全，所以建议使用 https 来访问你刚才搭建好的服务。
 
 1. 安装 Nginx
 
@@ -247,5 +249,6 @@ tags: ["Mattermost", "Docker"]
    sudo systemctl restart nginx
    ```
 
-   
+   此时应该可以使用 `https://<你的域名>` 来访问你的Mattermost了
 
+****
