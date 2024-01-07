@@ -1,10 +1,10 @@
 ---
-title: "使用 Hideip-network 搭建网页代理"
+title: "使用 HNet Web(Hideip-network) 搭建网页代理"
 date: 2023-11-11
 draft: false
-description: "使用hideip network搭建在线网页代理方法."
-slug: "hideip-network"
-tags: ["Proxy", "Hideip-network"]
+description: "使用 HNet Web 搭建在线网页代理方法."
+slug: "HNet"
+tags: ["Proxy", "HNet", "Hideip-network"]
 ---
 
 ## 前言
@@ -207,5 +207,4 @@ pm2 startup
 ```
 
 至此应该可以通过 `https://你的域名` 来访问HNet了.
-
 
