@@ -1,5 +1,5 @@
 ---
-title: "使用 HNet Web(Hideip-network) 搭建网页代理"
+title: "使用 HNet Web 搭建网页代理"
 date: 2023-11-11
 draft: false
 description: "使用 HNet Web 搭建在线网页代理方法."
@@ -9,7 +9,7 @@ tags: ["Proxy", "HNet", "Hideip-network"]
 
 ## 前言
 
-本文使用的在线网页代理是匿名浏览网页工具，通过浏览器网页实现访问你需要的网站，而不用单独开启VPN，适用于禁止使用VPN，或不便留下痕迹的情况。
+本文使用的在线网页代理是匿名浏览网页工具，通过浏览器网页实现访问你需要的网站，而不用单独开启 VPN，适用于禁止使用 VPN，或不便留下痕迹的情况。
 
 
 
@@ -19,13 +19,13 @@ tags: ["Proxy", "HNet", "Hideip-network"]
 
 1. 一台境外的服务器
 
-   可从[Vultr](www.vultr.com)，[DigitalOcean](www.digitalocean.com) 等云服务器商租用
+   可从 [Vultr](www.vultr.com)，[DigitalOcean](www.digitalocean.com) 等云服务器商租用
 
 2. 了解基本的终端命令行知识，例如：`cd`, `ls`, `systemctl` 等
 
 ### 环境需求 & 安装方式
 
-我的服务器使用Arch Linux，故我将使用Arch Linux的包管理器安装。如果你使用的是别的Linux发行版（如Debian，Ubuntu）等，请自行查看包管理器安装命令。
+我的服务器使用 Arch Linux，故我将使用 Arch Linux 的包管理器安装。如果你使用的是别的 Linux 发行版（如 Debian，Ubuntu）等，请自行查看包管理器安装命令。
 
 - node
 
@@ -49,7 +49,7 @@ tags: ["Proxy", "HNet", "Hideip-network"]
 
 {{< alert >}}
 
-**注意:** node版本需要v16及以上, 如果apt 安装的版本低于v16, 建议手动安装
+**注意:** `node` 版本需要 `v16` 及以上, 如果 `apt` 安装的版本低于 `v16`, 建议手动安装
 
 {{< /alert >}}
 
@@ -70,9 +70,9 @@ nginx version: nginx/1.22.1
 
 
 
-## 下载HNet文件 & 安装
+## 下载 HNet 文件 & 安装
 
-详情可参考[hideip.network](https://official.hideip.network/) 官方网站 
+详情可参考 [hideip.network](https://official.hideip.network/) 官方网站 
 
 ### 下载项目文件
 
@@ -92,11 +92,9 @@ npm install
 
 
 
-## 配置nginx
+## 配置 Nginx
 
-由于HNet项目规定仅允许通过https访问, 且项目默认使用本机等56559端口，所以需使用nginx将本机56559端口反代.
-
-使用nginx, 让你的域名 abc.def.xyz 可以访问到本机的 127.0.0.1:56559 端口
+由于 HNet 项目规定仅允许通过 https 访问, 且项目默认使用本机的 `56559` 端口，所以需使用 Nginx 将本机 `56559` 端口反代, 让你的域名，例如: `your.domain.com` 可以访问到本机的 `127.0.0.1:56559` 端口
 
 1. 在目录`/etc/nginx/conf.d` 创建文件 `hnet.conf`
 
@@ -110,10 +108,10 @@ npm install
    ```nginx
    server {
        listen 443 ssl; # 如果有其他进程在运行导致443被占用可以修改为任意其他端口, 但记住将防火墙中对应端口打开
-       server_name hide.anecho.link; # 填入DNS解析好的域名
+       server_name your.domain.com; # 填入DNS解析好的域名
    
-       ssl_certificate /root/cert/anecho.link.cer; # ssl证书公钥路径
-       ssl_certificate_key /root/cert/anecho.link.key; # ssl证书密钥路径
+       ssl_certificate /path/to/cert; # ssl证书公钥路径
+       ssl_certificate_key /path/to/key; # ssl证书密钥路径
        location / {
            # proxy_busy_buffers_size  512k;
            # proxy_buffers  4 512k;
@@ -134,7 +132,7 @@ npm install
 
 
 
-## 启动nginx
+## 启动 Nginx
 
 ### 加载配置
 
@@ -157,11 +155,11 @@ sudo systemctl restart nginx
 
 
 
-## 安装pm2
+## 安装 pm2
 
-### 什么是pm2
+### 什么是 pm2
 
-PM2是node进程管理工具，可以利用它来简化很多node应用管理的繁琐任务，如性能监控、自动重启、负载均衡等，而且使用非常简单。
+PM2 是 node 进程管理工具，可以利用它来简化很多 node 应用管理的繁琐任务，如性能监控、自动重启、负载均衡等，而且使用非常简单。
 
 ### 安装
 
@@ -182,9 +180,9 @@ pm2 --version
 
 
 
-## 启动HNet并后台运行
+## 启动 HNet 并后台运行
 
-通过pm2管理hnet在后台运行
+通过 pm2 管理 HNet 在后台运行
 
 ```bash
 #启动hnet并后台运行
@@ -206,5 +204,5 @@ pm2 save
 pm2 startup
 ```
 
-至此应该可以通过 `https://你的域名` 来访问HNet了.
+至此应该可以通过 `https://你的域名` 来访问 HNet 了.
 

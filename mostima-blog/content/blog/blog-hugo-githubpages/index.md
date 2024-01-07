@@ -15,7 +15,7 @@ tags: ["Blog", "Hugo", "GitHub Pages", "Cusdis"]
 
 ## GitHub Pages
 
-GitHub Pages **是一项静态站点托管服务，它直接从GitHub 上的仓库获取HTML、CSS 和JavaScript 文件，（可选）通过构建过程运行文件，然后发布网站**。 
+GitHub Pages **是一项静态站点托管服务，它直接从 GitHub  上的仓库获取 HTML, CSS 和 JavaScript 文件，（可选）通过构建过程运行文件，然后发布网站**。 
 
 ## Hugo
 
@@ -34,16 +34,16 @@ Hugo 是一个用 Go 编写的快速、现代的静态网站生成器，将 Mark
    - **博客内容仓库**: 存储博客的内容文件(文档, 图片等)
 
      - 输入你想要的仓库名
-     - 选择Public
-     - 选择Add a README file![](blog-repo.png)
+     - 选择 Public
+     - 选择 Add a README file![](blog-repo.png)
 
    - **GitHub Pages 仓库**: 通过GitHub Pages来搭建博客, 自然需要一个GitHub Pages 仓库
 
      - 此仓库需要以你的 `用户名.github.io` 的形式来命名
      
-     - 选择Public
+     - 选择 Public
      
-     - 选择Add a README file
+     - 选择 Add a README file
      
        ![](github-pages-repo.png)
      
@@ -109,9 +109,9 @@ sudo zypper install hugo
 
 #### 二进制文件安装
 
-1. 下载适合你系统版本的[Hugo二进制文件](https://github.com/gohugoio/hugo/releases/latest)
+1. 下载适合你系统版本的 [Hugo二进制文件](https://github.com/gohugoio/hugo/releases/latest)
 2. 将文件解压
-3. 将执行文件添加进`PATH`中
+3. 将执行文件添加进 `PATH` 中
 
 #### 源码编译安装
 
@@ -203,7 +203,7 @@ Hugo社区中提供各种主题, 挑选自己喜欢的即可, 各种主题都有
 
 #### 使用 git 安装
 
-1. 进入你的blog仓库
+1. 进入你的 blog 仓库
 
    ```bash
    cd <博客内容仓库名>	
@@ -222,7 +222,7 @@ Hugo社区中提供各种主题, 挑选自己喜欢的即可, 各种主题都有
 **注意** 要使用此方法, 请确保你使用的是 **Go 1.12** 或更高版本
 {{< /alert >}}
 
-1. 进入你的blog目录
+1. 进入你的 blog 目录
 
    ```bash
    # 如果你在GitHub上管理你的项目
@@ -251,7 +251,7 @@ Hugo社区中提供各种主题, 挑选自己喜欢的即可, 各种主题都有
 
 1. 进入站点根目录中 (即刚才使用 `hugo new site yoursite ` 创建的目录 ), 删除 `config.toml` 文件删除, 如果不存在这个文件, 则忽略这一步
 
-2. 将主题文件夹中的所有后缀为`.toml` 的文件都复制到 `yoursite/config/_default/` 目录下. 
+2. 将主题文件夹中的所有后缀为 `.toml` 的文件都复制到 `yoursite/config/_default/` 目录下. 
 
    {{< alert >}}
    **注意**: 如果你的 `config/_default/` 目录下已存在 `module.toml` 文件, 请勿将其覆盖
@@ -493,7 +493,7 @@ Blowfish 添加了对 Firebase 的支持以在网站上使用动态数据.
 
 Cusdis 是一个注重数据隐私的开源的评论系统，十分轻量，经过 gzipped 后大约只有 5kb.
 
-我选择Cusdis的原因有以下几点:
+我选择 Cusdis 的原因有以下几点:
 
 1. 轻量
 2. 部署方式灵活, Cusdis 的作者提供了免费托管服务, 以及自行部署两种方式, 评论不涉及什么隐私内容, 再加上我懒, 所以我选择了使用作者的托管服务
@@ -525,6 +525,6 @@ Cusdis 是一个注重数据隐私的开源的评论系统，十分轻量，经�
      data-page-title="{{ .Title }}"
    ```
 
-   即，将复制代码中的`PAGE_ID`, `PAGE_URL`, `PAGE_TITLE` 分别替换为`.File.UniqueID`, `.Permalink`, `.Title`
+   即，将复制代码中的 `PAGE_ID`, `PAGE_URL`, `PAGE_TITLE` 分别替换为 `.File.UniqueID`, `.Permalink`, `.Title`
 
 9. 最后将 `config/_default/params.toml` 中的 `showComments` 改为 `true`
