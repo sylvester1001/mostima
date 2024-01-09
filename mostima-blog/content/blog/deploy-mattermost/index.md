@@ -237,18 +237,21 @@ tags: ["Mattermost", "Docker"]
 
    ```bash
    sudo systemctl reload nginx
-   ```
 
 5. 启动 nginx 服务
 
    ```bash
    # 启动 nginx
    sudo systemctl start nginx
-   
+      
    # 或 重启 nginx
    sudo systemctl restart nginx
    ```
 
-   此时应该可以使用 `https://<你的域名>` 来访问你的Mattermost了
+   此时应该可以使用 `https://<你的域名>` 来访问你的 Mattermost 了
 
-****
+## Mattermost 使用
+### 登录 Mattermost
+在使用 `https://<yourdomain>` 来访问Mattermost服务后，会让你注册地一个账号，默认的第一个账号为管理员账号。
+
+我的 Mattermost 服务地址为 https://chat.anecho.link, 欢迎大家来玩～
