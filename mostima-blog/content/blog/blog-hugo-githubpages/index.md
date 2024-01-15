@@ -5,6 +5,8 @@ draft: false
 description: "hugo and github pages blog"
 slug: "hugo-github-pages-blog"
 tags: ["Blog", "Hugo", "GitHub Pages", "Cusdis"]
+series: ["Hugo 博客搭建"]
+series_order: 1
 ---
 
 ## 简介
@@ -422,66 +424,11 @@ Hugo社区中提供各种主题, 挑选自己喜欢的即可, 各种主题都有
 
 
 
-### Firebase
+## Firebase
 
-Blowfish 添加了对 Firebase 的支持以在网站上使用动态数据.
+Blowfish 添加了对 Firebase 的支持以在网站上使用动态数据，来显示阅读量与点赞数.
 
-使用方式如下:
-
-1. 在 [Firebase 官网](https://firebase.google.com/)免费注册一个账号
-
-2. 新建一个项目
-
-3. 选择 analytics location
-
-4. 在 `config/_default/params.toml` 文件中配置变量
-
-   ```toml
-   [firebase]
-     apiKey: "AIzaSyB5tqlqDky77Vb4Tc4apiHV4hRZI18KGiY",
-     authDomain: "blowfish-21fff.firebaseapp.com",
-     projectId: "blowfish-21fff",
-     storageBucket: "blowfish-21fff.appspot.com",
-     messagingSenderId: "60108104191",
-     appId: "1:60108104191:web:039842ebe1370698b487ca",
-     measurementId: "G-PEDMYR1V0K"
-   ```
-
-5. 配置 Firestore
-
-   1. 在侧栏中选择 Build
-
-   2. 打开 Firestore
-
-   3. 新建一个 database
-
-   4. 选择生产模式
-
-   5. 选择 location, 然后等待完成
-
-   6. 完成后, 将以下内容粘贴进输入框中
-
-      ```json
-      rules_version = '2';
-      service cloud.firestore {
-        match /databases/{database}/documents {
-          match /{document=**} {
-            allow read, write: if request.auth != null;
-          }
-        }
-      }
-      ```
-
-   7. 启用匿名授权
-
-      - 选择 [Build]
-      - 打开 [Authentication]
-      - 选择 [Get started]
-      - 单机 [Anonymous], 并将其打开
-      - 保存
-
-   如果你之前已经将 `showViews` 和 `showLikes` 设置为 `true` 的话, 现在阅读量和点赞量应该可以正常显示了.
-   
+由于内容长度较长，故写在了单独的一篇博文中。请参考[Hugo 博客中配置 Firebase 的方法](https://mostima.blog/blog/firebase-hugo-blog/).
 
 ---
 
