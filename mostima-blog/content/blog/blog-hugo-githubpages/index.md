@@ -308,7 +308,7 @@ Hugo社区中提供各种主题, 挑选自己喜欢的即可, 各种主题都有
 
 1. **修改文件名**
 
-   如果 `config.toml` 文件中 `defaultContentLanguage` 项设置为 `zh-cn` 的话, 需要将文件`languages.en.toml` 的文件名修改为`languages.zh-cn.toml`
+   如果在上一步 `config.toml` 文件中 `defaultContentLanguage` 项设置为 `zh-cn` 的话, 需要将文件`languages.en.toml` 的文件名修改为`languages.zh-cn.toml`
 
 2. **修改文件内容**
 
@@ -361,7 +361,7 @@ Hugo社区中提供各种主题, 挑选自己喜欢的即可, 各种主题都有
 
 3. cardview
 
-   将 Recent 的内容一卡片样式展示
+   将 Recent 的内容以卡片样式展示
 
    ```toml
    [homepage]

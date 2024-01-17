@@ -61,4 +61,5 @@ shortcode:
   recent_articles: "Recent"
 
 recent:
-  show_more: "显示更多"
+  # show_more: "More → ➜ ➔ ➞ ➫ ➾ "
+  show_more: "More →"
