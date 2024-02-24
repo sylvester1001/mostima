@@ -7,7 +7,7 @@
 
 colorScheme = "blowfish"
 # defaultAppearance = "dark" # valid options: light or dark
-defaultAppearance = "light"
+defaultAppearance = "dark"
 autoSwitchAppearance = true
 
 enableSearch = true
@@ -16,17 +16,18 @@ enableCodeCopy = true
 # mainSections = ["section1", "section2"]
 # robots = ""
 
-disableImageOptimization = true
+disableImageOptimization = false
 
-# defaultBackgroundImage = "IMAGE.jpg" # used as default for background images 
-# defaultFeaturedImage = "IMAGE.jpg" # used as default for featured images in all articles
+defaultBackgroundImage = "img/heroback.png" # used as default for background images 
+defaultFeaturedImage = "img/heroback.png" # used as default for featured images in all articles
 
-highlightCurrentMenuArea = false
+highlightCurrentMenuArea = true
 smartTOC = true
 smartTOCHideUnfocusedChildren = false
 
 [header]
-  layout = "fixed-fill-blur" # valid options: basic, fixed, fixed-fill, fixed-fill-blur
+  # layout = "fixed-fill-blur" # valid options: basic, fixed, fixed-fill, fixed-fill-blur
+  layout = "fixed" # valid options: basic, fixed, fixed-fill, fixed-fill-blur
 
 [footer]
   showMenu = true
@@ -38,7 +39,9 @@ smartTOCHideUnfocusedChildren = false
 [homepage]
   # layout = "profile" # valid options: page, profile, hero, card, background, custom
   layout = "background"
-  #homepageImage = "IMAGE.jpg" # used in: hero, and card
+  # homepageImage = "img/heroback2.png" # used in: hero, and card
+  homepageImage = "img/heroback2.png"
+  
   showRecent = true
   showRecentItems = 6
   showMoreLink = true
@@ -53,8 +56,8 @@ smartTOCHideUnfocusedChildren = false
   showLikes = true
   showDateUpdated = false
   showAuthor = true
-  showHero = false
-  # heroStyle = "basic" # valid options: basic, big, background, thumbAndBackground
+  showHero = false # 控制是否在文章内展示feature图片
+  heroStyle = "thumbAndBackground" # 控制文章的背景如何展示 valid options: basic, big, background, thumbAndBackground
   layoutBackgroundBlur = true # only used when heroStyle equals background or thumbAndBackground
   layoutBackgroundHeaderSpace = true # only used when heroStyle equals background
   showBreadcrumbs = false
