@@ -428,7 +428,9 @@ Hugo社区中提供各种主题, 挑选自己喜欢的即可, 各种主题都有
 
 Blowfish 添加了对 Firebase 的支持以在网站上使用动态数据，来显示阅读量与点赞数.
 
-由于内容长度较长，故写在了单独的一篇博文中。请参考[Hugo 博客中配置 Firebase 的方法](https://mostima.blog/blog/firebase-hugo-blog/).
+由于内容长度较长，故写在了单独的一篇博文中.
+
+{{< article link="/blog/firebase-hugo-blog/" >}}
 
 ---
 
