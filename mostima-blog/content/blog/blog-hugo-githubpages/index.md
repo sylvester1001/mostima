@@ -11,17 +11,17 @@ series_order: 1
 
 ## 简介
 
-在博客搭建完成之后，我意识到，建站对我来说是一个极低频的工作，除非以后需要更换新的部署方案，否则只有极小的可能性对网站进行大的变动，为了避免我忘记，也为了给有需要的人提供一些力所能及的帮助，故写下此文，如果有错误或误导的内容，请不吝在文末留言，或者邮件联系我～那么就开始吧
+在博客搭建完成之后，我意识到，建站对我来说是一个极低频的工作，除非以后需要更换新的部署方案，否则只有极小的可能性对网站进行大的变动，为了避免我忘记，也为了给有需要的人提供一些力所能及的帮助，故尽量详细的写下此文，如果有错误或误导的内容，请不吝在文末留言，或者邮件联系我～那么就开始吧
 
 
-
-## GitHub Pages
-
-GitHub Pages **是一项静态站点托管服务，它直接从 GitHub  上的仓库获取 HTML, CSS 和 JavaScript 文件，（可选）通过构建过程运行文件，然后发布网站**。 
 
 ## Hugo
 
-Hugo 是一个用 Go 编写的快速、现代的静态网站生成器，将 Markdown 文件转化成 HTML 文件。
+Hugo 是一个用 Go 实现的静态网站生成器，采用 Markdown 进行文章编辑， 并将 Markdown 文件转化成 HTML 文件来构建网页。支持丰富的主题配置，且可以通过 js 嵌入评论系统等插件。
+
+## GitHub Pages
+
+GitHub Pages 是一个静态网站托管系统，它直接从 GitHub  上的仓库获取 HTML, CSS 和 JavaScript 文件，通过构建过程运行文件，然后发布网站。 
 
 
 
@@ -71,7 +71,11 @@ Hugo 是一个用 Go 编写的快速、现代的静态网站生成器，将 Mark
 
 - 包管理器安装
 
-  > 较为方便, 但较保守系统如 Debian 可能安装的版本会较低
+  {{< alert >}}
+
+  较为方便, 但较保守系统如 Debian 可能安装的版本会较低
+
+  {{< /alert >}}
 
 - 二进制文件安装
 
@@ -292,7 +296,11 @@ Hugo社区中提供各种主题, 挑选自己喜欢的即可, 各种主题都有
    baseURL = "https://yourdomain.com/"
    ```
 
-   > 若你尚未在 Github Pages 中设置自定义域名, 请填入 `https://<username>.github.io/`
+   {{< alert >}}
+
+   **注意**：若你尚未在 Github Pages 中设置自定义域名, 请填入 `https://<username>.github.io/`
+
+   {{< /alert >}}
 
 3. **defaultContentLanguage**
 
@@ -436,44 +444,12 @@ Blowfish 添加了对 Firebase 的支持以在网站上使用动态数据，来�
 
 
 
-## Cusdis 评论系统
+## 评论系统
 
-评论系统有很多可以选择, 如 Disqus, utterances, cusdis 等，这里我选择的是Cusdis.
+评论系统有很多可以选择, 如 Disqus, Utterances, Cusdis, Waline 等，这里我选择了 Waline.
 
-Cusdis 是一个注重数据隐私的开源的评论系统，十分轻量，经过 gzipped 后大约只有 5kb.
+Waline 是一款简洁，安全的评论系统。它支持完整的 Markdown 语法，同时包含表情，数学公式， HTML嵌入等的同时具有不错的颜值！且在允许匿名评论的基础上支持账号登录，可以有效保持身份。并且允许使用 Vercel 免费，且简洁方便的部署。
 
-我选择 Cusdis 的原因有以下几点:
+**配置方法请参考此文**
 
-1. 轻量
-2. 部署方式灵活, Cusdis 的作者提供了免费托管服务, 以及自行部署两种方式, 评论不涉及什么隐私内容, 再加上我懒, 所以我选择了使用作者的托管服务
-3. 评论时不需要授权, 登录等操作, 简单的输入昵称后即可发表评论, 非常方便 
-
-### 配置方法
-
-1. 在 [Cusdis官网](https://cusdis.com/) 注册一个账号
-
-2. 然后点击<kbd>Add website</kbd>, 建立一个仓库
-
-3. 进入仓库后， 点击上方的<kbd>Embeded code</kbd>
-
-4. 复制它提供的代码，如下所示
-
-   ![](embeded-code.png)
-
-5. 在你的站点 `根目录/layouts` 目录下，新建一个目录`partials`
-
-6. 进入`partials`, 然后新建一个名为`comments.html`的文件
-
-7. 将第四步复制的代码粘贴进 `comments.html` 中
-
-8. 再将以下几行的内容替换
-
-   ```
-     data-page-id="{{ .File.UniqueID }}"
-     data-page-url="{{ .Permalink }}"
-     data-page-title="{{ .Title }}"
-   ```
-
-   即，将复制代码中的 `PAGE_ID`, `PAGE_URL`, `PAGE_TITLE` 分别替换为 `.File.UniqueID`, `.Permalink`, `.Title`
-
-9. 最后将 `config/_default/params.toml` 中的 `showComments` 改为 `true`
+{{< article link="/blog/waline-comment-system/" >}}
