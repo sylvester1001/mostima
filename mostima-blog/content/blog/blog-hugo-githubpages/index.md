@@ -7,6 +7,8 @@ slug: "hugo-github-pages-blog"
 tags: ["Blog", "Hugo", "GitHub Pages", "Cusdis"]
 series: ["Hugo 博客搭建"]
 series_order: 1
+showHero: true
+heroStyle: "big"
 ---
 
 ## 简介

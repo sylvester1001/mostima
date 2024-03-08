@@ -7,6 +7,8 @@ slug: "firebase-hugo-blog"
 tags: ["Firebase", "Blog", "Hugo"]
 series: ["Hugo 博客搭建"]
 series_order: 2
+showHero: true
+heroStyle: "basic"
 ---
 
 ## 简介

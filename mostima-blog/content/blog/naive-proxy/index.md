@@ -5,6 +5,8 @@ draft: false
 description: "naive proxy establish."
 slug: "naive-proxy"
 tags: ["NaiveProxy"]
+showHero: true
+heroStyle: "thumbAndBackground"
 ---
 ## 简介
 

@@ -14,13 +14,13 @@ article:
   word_count:
     one: "{{ .Count }} 字"
     other: "{{ .Count }} 字"
-  part_of_series: "This article is part of a series."
-  part: "Part"
-  this_article: "This Article"
-  related_articles: "Related"
+  part_of_series: "这篇文章属于一个选集。"
+  part: "§"
+  this_article: "本文"
+  related_articles: "相关文章"
 
 author:
-  byline_title: "Author"
+  byline_title: "作者"
 
 # code:
 #   copy: "Copy"
@@ -34,7 +34,7 @@ error:
 footer:
   dark_appearance: "切换为深色模式"
   light_appearance: "切换为浅色模式"
-  powered_by: "Powered by {{ .Hugo }} &amp; {{ .Theme }}"
+  powered_by: "由 {{ .Hugo }} &amp; {{ .Theme }} 强力驱动"
 
 list:
   externalurl_title: "链接到外部网站"
@@ -58,7 +58,7 @@ sharing:
   twitter: "分享到 Twitter"
 
 shortcode:
-  recent_articles: "Recent"
+  recent_articles: "最近的文章"
 
 recent:
   show_more: "显示更多"

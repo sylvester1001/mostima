@@ -5,6 +5,8 @@ draft: false
 description: "基于 Docker 部署 Mattermost."
 slug: "Mattermost"
 tags: ["Mattermost", "Docker"]
+showHero: true
+heroStyle: "thumbAndBackground"
 ---
 
 本文记录如何使用 Docker 私有化部署可于生产环境中使用的 Mattermost 的方法.
@@ -137,7 +139,7 @@ tags: ["Mattermost", "Docker"]
 
    {{< alert >}}
 
-   注意: 本文撰写时Mattermost最新的版本号为 9.3.0
+   注意: 本文撰写时 Mattermost 最新的版本号为 9.3.0
 
    {{< /alert >}}
 

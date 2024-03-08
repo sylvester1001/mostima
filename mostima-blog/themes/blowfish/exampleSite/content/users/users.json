@@ -99,13 +99,6 @@
     ]
   },
   {
-    "title": "tabletopflore.com",
-    "url": "https://www.tabletopflore.com",
-    "tags": [
-      "Personal site"
-    ]
-  },
-  {
     "title": "omarohn.de",
     "url": "https://omarohn.de",
     "tags": [
@@ -113,22 +106,8 @@
     ]
   },
   {
-    "title": "spelucin.me",
-    "url": "https://spelucin.me",
-    "tags": [
-      "Personal site"
-    ]
-  },
-  {
     "title": "insidemordecai.com",
     "url": "https://insidemordecai.com",
-    "tags": [
-      "Personal site"
-    ]
-  },
-  {
-    "title": "jamesdixon.dev",
-    "url": "https://jamesdixon.dev",
     "tags": [
       "Personal site"
     ]
@@ -274,20 +253,6 @@
     ]
   },
   {
-    "title": "shenshu.fun",
-    "url": "https://shenshu.fun/",
-    "tags": [
-      "Personal site"
-    ]
-  },
-  {
-    "title": "hellstabber.github.io",
-    "url": "https://hellstabber.github.io/",
-    "tags": [
-      "Personal site"
-    ]
-  },
-  {
     "title": "clemsau.com",
     "url": "https://clemsau.com/",
     "tags": [
@@ -341,13 +306,6 @@
     "url": "https://marupanda.art/marucomics/",
     "tags": [
       "Comics site"
-    ]
-  },
-  {
-    "title": "seanomahoney.com",
-    "url": "https://seanomahoney.com/",
-    "tags": [
-      "Personal site"
     ]
   },
   {
@@ -467,6 +425,149 @@
     "url": "https://rejowski.xyz/",
     "tags": [
       "Personal Site"
+    ]
+  },
+  {
+    "title": "v-y-s.com",
+    "url": "https://v-y-s.com/",
+    "tags": [
+      "Personal Site"
+    ]
+  },
+  {
+    "title": "blog.stonegarden.dev",
+    "url": "https://blog.stonegarden.dev/",
+    "tags": [
+      "Personal Site"
+    ]
+  },
+  {
+    "title": "renaud.warnotte.be",
+    "url": "https://renaud.warnotte.be",
+    "tags": [
+      "Personal site"
+    ]
+  },
+  {
+    "title": "BoringTech.net",
+    "url": "https://boringtech.net/",
+    "tags": [
+      "Personal Site",
+      "Blog"
+    ]
+  },
+  {
+    "title": "technicaldc.github.io",
+    "url": "https://technicaldc.github.io/",
+    "tags": [
+      "Personal Site",
+      "Blog"
+    ]
+  },
+  {
+    "title": "binarydigit.cafe",
+    "url": "https://binarydigit.cafe/",
+    "tags": [
+      "Personal site"
+    ]
+  },
+  {
+    "title": "alxhslm.github.io",
+    "url": "https://alxhslm.github.io/",
+    "tags": [
+      "Personal Site"
+    ]
+  },
+  {
+    "title": "the-maze.net",
+    "url": "https://www.the-maze.net/",
+    "tags": [
+      "Personal site",
+      "Blog"
+    ]
+  },
+  {
+    "title": "datatodroids.tech",
+    "url": "https://datatodroids.tech/",
+    "tags": [
+      "Personal site",
+      "Blog"
+    ]
+  },
+  {
+    "title": "DXPetti.com",
+    "url": "https://www.dxpetti.com/",
+    "tags": [
+      "Personal site",
+      "Blog"
+    ]
+  },
+  {
+    "title": "asterisk.lol",
+    "url": "https://asterisk.lol",
+    "tags": [
+      "Blog",
+      "Personal Site"
+    ]
+  },
+  {
+    "title": "notes.bluesdriveamelia.space",
+    "url": "https://notes.bluesdriveamelia.space/",
+    "tags": [
+      "Blog",
+      "Personal site"
+    ]
+  },
+  {
+    "title": "ekwska.com",
+    "url": "https://ekwska.com",
+    "tags": [
+      "Personal blog"
+    ]
+  },
+  {
+    "title": "todreamr.github.io",
+    "url" : "https://todreamr.github.io/",
+    "tags":[
+       "Personal site"
+    ]
+  },
+  {
+    "title": "aakashnand.com",
+    "url" : "https://aakashnand.com/",
+    "tags":[
+       "Personal site"
+    ]
+  },
+  {
+    "title": "innerknowing",
+    "url": "https://innerknowing.xyz",
+    "tags": [
+      "Personal site",
+      "Modeller"
+    ]
+  },
+  {
+    "title": "Mare_Infinitus",
+    "url": "https://lab.imgb.space",
+    "tags": [
+      "Personal Site",
+      "Blog"
+    ]
+  },
+    {
+    "title": "fwzyrln_",
+    "url": "https://fauziralpiandi.github.io",
+    "tags": [
+      "Personal Homepage",
+      "Blog"
+    ]
+  },
+  {
+    "title": "karlukle.site",
+    "url": "https://karlukle.site",
+    "tags": [
+      "Personal blog"
     ]
   }
 ]

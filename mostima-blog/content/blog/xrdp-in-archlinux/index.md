@@ -5,13 +5,15 @@ draft: false
 description: "useage of xrdp in arch linux"
 slug: "xrdp-arch-linux"
 tags: ["Arch Linux", "xrdp"]
+showHero: true
+heroStyle: "basic"
 ---
 
 
 
 ## 前言
 
-由于做 CAD 的缘故, 公司使用 Cadence Virtuoso 等 EDA 软件仅支持在 Linux 环境中运行, 再加之平时喜欢折腾, 在 Windows 或者 macOS 中使用虚拟机总没有一台宿主机来的舒坦 (其实就是想买电脑了). 又考虑到可以用来做旁路由, 让家里的电视, switch 等所有设备方便的科学上网, 所以购入了一台小型 server 放在家里, 平时待机3-5W左右的功耗也足以让我心安理得的让它7/24 online.
+由于工作使用的 EDA 软件仅支持在 Linux 环境中运行, 再加之平时喜欢折腾, 在 Windows 或者 macOS 中使用虚拟机总没有一台宿主机来的舒坦 (其实就是想买电脑了). 又考虑到可以用来做旁路由, 让家里的电视, switch 等所有设备方便的科学上网, 所以购入了一台小型 server 放在家里, 平时待机 5W 左右的功耗也足以让我心安理得的让它7/24 online.
 
 有桌面洁癖的我实在是不希望桌面的两个显示器后面再多出现两根线, 所以决定用 Headless 的方式使用这台 server, 由于 EDA 软件使用需要有图形界面, 所以决定使用 XRDP, 虽然 VNC 也可以, 但由于 XRDP 支持 BIOS 屏幕显示, 所以我决定使用它.
 

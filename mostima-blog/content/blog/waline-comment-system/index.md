@@ -7,7 +7,12 @@ slug: "waline-comment-system"
 tags: ["Waline", "Hugo"]
 series: ["Hugo 博客搭建"]
 series_order: 3
+showHero: true
+heroStyle: "thumbAndBackground"
 ---
+<!-- 头部使用showHero 参数来实现是否显示hero -->
+<!-- 然后添加 heroStyle 来实现背景或文章头feature图片的显示 -->
+<!-- 参数有 basic(只显示头部featured图片)，big(显示大featured图)，background(显示背景图片), thumbAndBackground(同时显示featured头图和背景图片) -->
 
 Waline 是一款简洁，安全的评论系统。它支持完整的 Markdown 语法，同时包含表情，数学公式， HTML嵌入等。
 

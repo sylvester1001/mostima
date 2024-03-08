@@ -5,6 +5,8 @@ draft: false
 description: "使用 HNet Web 搭建在线网页代理方法."
 slug: "HNet"
 tags: ["Proxy", "HNet", "Hideip-network"]
+showHero: true
+heroStyle: "basic"
 ---
 
 ## 前言
@@ -19,9 +21,9 @@ tags: ["Proxy", "HNet", "Hideip-network"]
 
 1. 一台境外的服务器
 
-   可从 [Vultr](www.vultr.com)，[DigitalOcean](www.digitalocean.com) 等云服务器商租用
+   可从 [Vultr](www.vultr.com), [DigitalOcean](www.digitalocean.com) 等云服务器商租用
 
-2. 了解基本的终端命令行知识，例如：`cd`, `ls`, `systemctl` 等
+2. 了解基本的终端命令行知识，例如: `cd`, `ls`, `systemctl` 等
 
 ### 环境需求 & 安装方式
 
