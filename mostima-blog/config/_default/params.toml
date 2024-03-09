@@ -132,6 +132,7 @@ smartTOCHideUnfocusedChildren = false
   messagingSenderId = "826159426769"
   appId = "1:826159426769:web:3084a352f81fefb29729f0"
   measurementId = "G-NYG9VZPWPJ"
+
   # apiKey = "XXXXXX"
   # authDomain = "XXXXXX"
   # projectId = "XXXXXX"
@@ -139,6 +140,17 @@ smartTOCHideUnfocusedChildren = false
   # messagingSenderId = "XXXXXX"
   # appId = "XXXXXX"
   # measurementId = "XXXXXX"
+
+[umamiAnalytics]
+  # websiteid = "e3110b04-0792-4fd1-b02a-dfa646f8e2f6"
+  # domain = "mostima.blog"
+  # token = "q6uvcdaltys0PEd7whTobquzDdyzcQtC"
+  # url = "https://umami.is/v1"
+  # id = "e3110b04-0792-4fd1-b02a-dfa646f8e2f6"
+  # name = "Mostima"
+  # domain = "mostima.blog"
+  # userId = "d83ae9c7-ec84-46ee-bce4-48f4d9e63e5c"
+  # createdBy = "d83ae9c7-ec84-46ee-bce4-48f4d9e63e5c"
 
 [fathomAnalytics]
   # site = "ABC12345"

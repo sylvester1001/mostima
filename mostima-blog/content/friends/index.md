@@ -13,15 +13,13 @@ heroStyle: "background"
 background: "/img/heroback.png"
 showTableOfContents: false
 ---
-
-### Oh 暂时只有我自己
----
+<!-- --- -->
 <!-- {{< alert >}} ···································································· {{< /alert >}} -->
-
-{{< friend name="Mostima" url="https://mostima.blog" logo="https://mostima.blog/img/avatar.jpg" word="拍碎波浪的一千朵太阳" >}}
-{{< friend name="Mostimb" url="https://mostima.blog" logo="https://mostima.blog/img/avatar.jpg" word="拍碎波浪的两千朵太阳" >}}
-{{< friend name="Mostimc" url="https://mostima.blog" logo="https://mostima.blog/img/avatar.jpg" word="拍碎波浪的三千朵太阳" >}}
-{{< friend name="Mostimd" url="https://mostima.blog" logo="https://mostima.blog/img/avatar.jpg" word="拍碎波浪的四千朵太阳" >}}
+<br>
+{{< friend name="次世嘉平" url="https://jiapingplus.icu/" logo="https://cdn.jsdelivr.net/gh/5ammyZ/jiaping-blog-pictures@main/stack-pics/avatar.png" word="为免天下无所适从" >}}
+<!-- {{< friend name="Mostimb" url="https://mostima.blog" logo="https://mostima.blog/img/avatar.jpg" word="拍碎波浪的两千朵太阳" >}} -->
+<!-- {{< friend name="Mostimc" url="https://mostima.blog" logo="https://mostima.blog/img/avatar.jpg" word="拍碎波浪的三千朵太阳" >}} -->
+<!-- {{< friend name="Mostimd" url="https://mostima.blog" logo="https://mostima.blog/img/avatar.jpg" word="拍碎波浪的四千朵太阳" >}} -->
 
 ---
 
