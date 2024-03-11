@@ -201,6 +201,7 @@ hugo v0.119.0+extended linux/amd64 BuildDate=unknown
 Hugo社区中提供各种主题, 挑选自己喜欢的即可, 各种主题都有详细的文档告诉你如何安装.
 
 我使用了 Blowfish, 所以接下来的内容都已 Blowfish 为例.
+{{< github repo="nunocoracao/blowfish" >}}
 
 ### 安装 Blowfish 主题
 

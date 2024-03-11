@@ -13,13 +13,20 @@ showTableOfContents: false
 
 ## 关于我
 
-Hi👋！我是 Mostima，你也可以叫我十一！
+Hi:waving_hand:！我是 Mostima，你也可以叫我十一！
 
 一个活泼的乐子人，传统意义的三分钟热度，但真喜欢的东西却很执着。
 
 养有四只猫咪 🐈🐈🐈🐈
 
-![](cat.JPG)
+{{< gallery >}}
+  <img src="./cat1.JPG" class="grid-w50 md:grid-w33 xl:grid-w25" />
+  <img src="./cat2.JPG" class="grid-w50 md:grid-w33 xl:grid-w25" />
+  <img src="./cat3.JPG" class="grid-w50 md:grid-w33 xl:grid-w25" />
+  <img src="./cat4.JPG" class="grid-w50 md:grid-w33 xl:grid-w25" />  
+  <img src="./cat5.JPG" class="grid-w50 md:grid-w33 xl:grid-w25" />  
+  <img src="./cat6.JPG" class="grid-w50 md:grid-w33 xl:grid-w25" />  
+{{< /gallery >}}
 
 爱好吉他，猫咪，游戏，搞机，足球，电影，旅行，欢迎和我讨论！
 
