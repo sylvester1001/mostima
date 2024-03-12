@@ -1,9 +1,9 @@
 #!/bin/bash
 
-# 保存当前目录
+# 当前目录
 CURRENT_DIR=$(pwd)
 
-# 定义博客目录路径常量
+# 博客目录
 BLOG_DIR="/Users/sylvestershi/blog/mostima/mostima-blog"
 
 # 检查是否存在博客目录
@@ -28,10 +28,10 @@ hugo
 cd public || exit 1
 
 # 4. 提示输入 commit
-read -p "请输入 commit: " commit
+read -p "请输入 commit 内容: " commit
 
 # 5. 提示是否确认执行
-read -p "是否确定执行？(Y/N): " confirmation
+read -p "是否确认执行？(Y/N): " confirmation
 
 # 判断用户输入
 if [[ $confirmation =~ ^[Yy]$ ]]; then

@@ -25,7 +25,7 @@ showTableOfContents: false
 
 ### 交换友链
 
-欢迎在下方 {{< icon "comment">}}留言，[{{< icon "email" >}}邮件](mailto:mostima@aol.com) 或 [{{< icon "telegram" >}}Telegram](https://t.me/CovenMostima) 联系我，我会很开心和你交换的！
+欢迎在下方 {{< icon "comment-3">}}留言，[{{< icon "email" >}}邮件](mailto:mostima@aol.com) 或 [{{< icon "telegram" >}}Telegram](https://t.me/CovenMostima) 联系我，我会很开心和你交换的！
 
 **请留下以下信息：**
 
